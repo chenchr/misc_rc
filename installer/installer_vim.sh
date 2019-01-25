@@ -11,5 +11,10 @@ if [ ! -d ~/.misc_rc/vim/bundle/YouCompleteMe/third_party/ycmd/clang_archives ];
 fi
 python3 install.py --clang-completer
 
+if [[ ! -e ~/.vim/syntax ]]; then
+    mkdir -p ~/.vim/syntax
+fi
+cp ~/.misc_rc/vim/bundle/Python-Syntax-Folding/syntax/python.vim ~/.vim/syntax/
+
 echo -e "\n\" from misc_rc" >> ~/.vimrc
-echo "so ~/.misc_rc/vimrc" >> ~/.vimrc
+echo "so ~/.misc_rc/vim_setup.vim" >> ~/.vimrc

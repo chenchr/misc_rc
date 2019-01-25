@@ -3,4 +3,4 @@ if [[ ! -e ~/.bashrc ]]; then
 fi
 
 echo -e '\n# from misc_rc' >> ~/.bashrc
-echo "source ~/.misc_rc/bashrc" >> ~/.bashrc
+echo "source ~/.misc_rc/bash.sh" >> ~/.bashrc
